@@ -1,0 +1,74 @@
+/* ==========================================================================
+   MAIN
+   ========================================================================== */
+
+body { 
+	background: $white;
+}
+
+a {
+   outline: 0;
+}
+
+input::-moz-focus-inner, select::-moz-focus-inner { 
+  border: 0; 
+}
+
+.hero {
+	margin: $gutter*4 0px;
+}
+.hero__sub {
+	color: $gray;
+}
+
+.service {
+	position: relative;
+	height: 352px;
+}
+.service__title {
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+	padding: $gutter/2;
+	background: $primary;
+	h2 {
+		font-size: 20px;
+		color: $white;
+	}
+}
+.service__sub {
+	position: absolute;
+	z-index: 10;
+	bottom: 0px;
+	left: 0px;
+}
+.service__wrap {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+.service__color {
+	position: absolute;
+	z-index: 5;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100%;
+	width: 100%;
+	background: url('../img/green-trans.png') repeat;
+}
+.service__image {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+}
+.service-content {
+	background: $gray-lighter;
+	padding: $gutter*1.5;
+}
+
+.service, .service-content, .nav {
+	display: none;
+}

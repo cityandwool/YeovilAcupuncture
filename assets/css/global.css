@@ -1,0 +1,149 @@
+/* yeovilacupuncture.co.uk by @cityandwool
+*/
+/* line 17, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, ../../../../../../../RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* ========================================================================== VARIABLES ========================================================================== */
+/* Medium */
+/* Large */
+/* ========================================================================== MIXINS ========================================================================== */
+/* line 21, ../sass/generic/_mixins.scss */
+.service, .service-content, .header, .header__wrap { zoom: 1; }
+/* line 23, ../sass/generic/_mixins.scss */
+.service:before, .service-content:before, .header:before, .header__wrap:before, .service:after, .service-content:after, .header:after, .header__wrap:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+/* line 29, ../sass/generic/_mixins.scss */
+.service:after, .service-content:after, .header:after, .header__wrap:after { clear: both; }
+
+/* ========================================================================== TYPE ========================================================================== */
+/* line 5, ../sass/base/_type.scss */
+body { font-family: 'Montserrat'; }
+
+/* line 8, ../sass/base/_type.scss */
+.hero__title { font-weight: 700; }
+
+/* line 11, ../sass/base/_type.scss */
+.hero { text-align: center; }
+
+/* line 14, ../sass/base/_type.scss */
+.hero__title { font-size: 40px; text-transform: uppercase; margin-bottom: 10px; }
+
+/* line 20, ../sass/base/_type.scss */
+.hero__sub { font-family: Georgia; font-weight: normal; font-style: italic; font-size: 16px; margin-bottom: 40px; }
+
+/* line 28, ../sass/base/_type.scss */
+.service-content h3 { font-size: 20px; color: #1dd2af; margin-bottom: 20px; }
+/* line 33, ../sass/base/_type.scss */
+.service-content p { color: #999999; margin-bottom: 20px; line-height: 24px; }
+
+/* ========================================================================== BUTTONS ========================================================================== */
+/* line 5, ../sass/components/_buttons.scss */
+.hero__link { display: inline-block; padding: 10px 20px; border-width: 1px; border-style: solid; border-color: #1dd2af; margin: 0px 5px; text-decoration: none; color: #1dd2af; }
+/* line 14, ../sass/components/_buttons.scss */
+.hero__link:hover { border-color: #1dd2af; background: #1dd2af; color: white; }
+
+/* ========================================================================== GRID ========================================================================== */
+/* ========================================================================== LAYOUT ========================================================================== */
+/* line 5, ../sass/structure/_layout.scss */
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 16, ../sass/structure/_layout.scss */
+.service { display: inline; float: left; width: 33.33333%; padding: 0 10px; box-sizing: border-box; padding: 0px; }
+
+/* line 20, ../sass/structure/_layout.scss */
+.service-content { display: inline; float: left; width: 66.66667%; padding: 0 10px; box-sizing: border-box; padding: 0px; }
+
+/* ========================================================================== HEADER ========================================================================== */
+/* line 5, ../sass/structure/_header.scss */
+.header { position: relative; margin-bottom: 4px; }
+/* line 9, ../sass/structure/_header.scss */
+.header:after { content: ''; position: absolute; left: 0px; right: 0px; bottom: -4px; width: 100%; height: 4px; background: rgba(0, 0, 0, 0.1); }
+
+/* line 20, ../sass/structure/_header.scss */
+.header__wrap { max-width: 1024px; margin: 0px auto; padding: 0px 20px; }
+
+/* line 24, ../sass/structure/_header.scss */
+.header__title { display: block; height: 50px; width: 69px; background: url("../img/naomi-ryland-yeovil-acpuncturist-logo.png"); -webkit-background-size: 69px; -moz-background-size: 69px; -o-background-size: 69px; background-size: 69px; text-indent: -9999px; margin: 34px 0px 30px 0px; float: left; }
+
+/* ========================================================================== NAVIGATION ========================================================================== */
+/* line 7, ../sass/structure/_nav.scss */
+.nav { float: right; }
+
+/* line 10, ../sass/structure/_nav.scss */
+.nav__list { margin: 0px; }
+
+/* line 13, ../sass/structure/_nav.scss */
+.nav__item { display: inline-block; margin-left: 10px; }
+
+/* line 17, ../sass/structure/_nav.scss */
+.nav__link { display: block; height: 120px; line-height: 120px; text-decoration: none; position: relative; color: #999999; }
+/* line 24, ../sass/structure/_nav.scss */
+.nav__link:hover { color: #16a085; }
+/* line 26, ../sass/structure/_nav.scss */
+.nav__link:hover:after { content: ''; height: 4px; bottom: 4px; width: 100%; display: block; background: #1dd2af; left: 0px; right: 0px; }
+
+/* ========================================================================== MAIN ========================================================================== */
+/* line 5, ../sass/structure/_main.scss */
+body { background: white; }
+
+/* line 9, ../sass/structure/_main.scss */
+a { outline: 0; }
+
+/* line 13, ../sass/structure/_main.scss */
+input::-moz-focus-inner, select::-moz-focus-inner { border: 0; }
+
+/* line 17, ../sass/structure/_main.scss */
+.hero { margin: 80px 0px; }
+
+/* line 20, ../sass/structure/_main.scss */
+.hero__sub { color: #999999; }
+
+/* line 24, ../sass/structure/_main.scss */
+.service { position: relative; height: 352px; }
+
+/* line 28, ../sass/structure/_main.scss */
+.service__title { position: absolute; z-index: 10; top: 0px; left: 0px; padding: 10px; background: #1dd2af; }
+/* line 35, ../sass/structure/_main.scss */
+.service__title h2 { font-size: 20px; color: white; }
+
+/* line 40, ../sass/structure/_main.scss */
+.service__sub { position: absolute; z-index: 10; bottom: 0px; left: 0px; }
+
+/* line 46, ../sass/structure/_main.scss */
+.service__wrap { position: relative; overflow: hidden; height: 100%; }
+
+/* line 51, ../sass/structure/_main.scss */
+.service__color { position: absolute; z-index: 5; top: 0px; bottom: 0px; left: 0px; right: 0px; height: 100%; width: 100%; background: url("../img/green-trans.png") repeat; }
+
+/* line 62, ../sass/structure/_main.scss */
+.service__image { position: absolute; z-index: 4; width: 100%; }
+
+/* line 67, ../sass/structure/_main.scss */
+.service-content { background: #fafafa; padding: 30px; }
+
+/* line 72, ../sass/structure/_main.scss */
+.service, .service-content, .nav { display: none; }
+
+/* ========================================================================== FOOTER ========================================================================== */

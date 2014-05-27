@@ -1,0 +1,23 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+%btn {
+	display: inline-block;
+	padding: $gutter/2 $gutter;
+	border-width: 1px;
+	border-style: solid;
+	border-color: $primary;
+	margin: 0px $gutter/4;
+	text-decoration: none;
+	color: $primary;
+	&:hover {
+		border-color: $primary;
+		background: $primary;
+		color: $white;
+	}
+}
+
+.hero__link {
+	@extend %btn;
+}

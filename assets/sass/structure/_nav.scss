@@ -1,0 +1,37 @@
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+$h: 120px;
+
+.nav {
+	float: right;
+}
+.nav__list {
+	margin: 0px;
+}
+.nav__item {
+	display: inline-block;
+	margin-left: $gutter/2;
+}
+.nav__link {
+	display: block;
+	height: $h;
+	line-height: $h;
+	text-decoration: none;
+	position: relative;
+	color: $gray;
+	&:hover {
+		color: $secondary;
+		&:after {
+			content: '';
+			height: 4px;
+			bottom: 4px;
+			width: 100%;
+			display: block;
+			background: $primary;
+			left: 0px; 
+			right: 0px;
+		}
+	}
+}

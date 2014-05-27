@@ -1,0 +1,23 @@
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+*, *:before, *:after {
+   @include box-sizing(border-box);
+}
+
+@mixin block {
+	max-width: $fixed-width;
+	margin: 0px auto;
+	padding: 0px $gutter;
+}
+
+
+.service {
+	@include column(4);
+	padding: 0px;
+}
+.service-content {
+	@include column(8);
+	padding: 0px;
+}
