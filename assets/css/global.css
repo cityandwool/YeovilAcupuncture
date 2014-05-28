@@ -44,21 +44,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 5, ../sass/base/_type.scss */
 body { font-family: 'Montserrat'; }
 
-/* line 8, ../sass/base/_type.scss */
-.hero__title { font-weight: 700; }
-
 /* line 11, ../sass/base/_type.scss */
-.hero { text-align: center; }
+.links__item:after { font-family: 'Font Awesome'; }
 
 /* line 14, ../sass/base/_type.scss */
+.hero { text-align: center; }
+
+/* line 17, ../sass/base/_type.scss */
 .hero__title { font-size: 40px; text-transform: uppercase; margin-bottom: 10px; }
 
-/* line 20, ../sass/base/_type.scss */
+/* line 23, ../sass/base/_type.scss */
 .hero__sub { font-family: Georgia; font-weight: normal; font-style: italic; font-size: 16px; margin-bottom: 40px; }
 
-/* line 28, ../sass/base/_type.scss */
+/* line 31, ../sass/base/_type.scss */
 .service-content h3 { font-size: 20px; color: #1dd2af; margin-bottom: 20px; }
-/* line 33, ../sass/base/_type.scss */
+/* line 36, ../sass/base/_type.scss */
 .service-content p { color: #999999; margin-bottom: 20px; line-height: 24px; }
 
 /* ========================================================================== BUTTONS ========================================================================== */
@@ -197,46 +197,48 @@ input::-moz-focus-inner, select::-moz-focus-inner { border: 0; }
 /* line 21, ../sass/structure/_main.scss */
 .hero__sub { color: #999999; }
 
-/* line 25, ../sass/structure/_main.scss */
+@media screen and (max-width: 48em) { /* line 25, ../sass/structure/_main.scss */
+  .hero__title { font-size: 35px; } }
+/* line 30, ../sass/structure/_main.scss */
 .service { position: relative; height: 300px; }
 
-/* line 29, ../sass/structure/_main.scss */
+/* line 34, ../sass/structure/_main.scss */
 .service__title { position: absolute; z-index: 10; top: 0px; left: 0px; padding: 15px; }
-/* line 35, ../sass/structure/_main.scss */
+/* line 40, ../sass/structure/_main.scss */
 .service__title h2 { font-size: 22px; color: white; }
 
-/* line 40, ../sass/structure/_main.scss */
+/* line 45, ../sass/structure/_main.scss */
 .service__sub { position: absolute; z-index: 10; bottom: 20px; left: 20px; right: 20px; color: white; line-height: 24px; }
 
-/* line 49, ../sass/structure/_main.scss */
+/* line 54, ../sass/structure/_main.scss */
 .service__wrap { position: relative; overflow: hidden; height: 100%; }
 
-/* line 54, ../sass/structure/_main.scss */
+/* line 59, ../sass/structure/_main.scss */
 .service__color { position: absolute; z-index: 5; top: 0px; bottom: 0px; left: 0px; right: 0px; height: 100%; width: 100%; }
 
-/* line 64, ../sass/structure/_main.scss */
+/* line 69, ../sass/structure/_main.scss */
 .service__image { position: absolute; z-index: 4; min-width: 100%; min-height: 100%; }
 
-/* line 70, ../sass/structure/_main.scss */
+/* line 75, ../sass/structure/_main.scss */
 .service-content { background: #fafafa; padding: 30px; }
-/* line 73, ../sass/structure/_main.scss */
+/* line 78, ../sass/structure/_main.scss */
 .service-content ul { margin-bottom: 20px; font-size: 12px; }
-/* line 77, ../sass/structure/_main.scss */
+/* line 82, ../sass/structure/_main.scss */
 .service-content ul li { color: #999999; line-height: 24px; float: left; display: inline-block; margin-right: 10px; }
 
-/* line 89, ../sass/structure/_main.scss */
+/* line 94, ../sass/structure/_main.scss */
 .third--primary .service__title { background: #1dd2af; }
-/* line 100, ../sass/structure/_main.scss */
+/* line 105, ../sass/structure/_main.scss */
 .third--primary .service__color { background-color: #16a085; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
-/* line 89, ../sass/structure/_main.scss */
+/* line 94, ../sass/structure/_main.scss */
 .third--secondary .service__title { background: #2ecc71; }
-/* line 100, ../sass/structure/_main.scss */
+/* line 105, ../sass/structure/_main.scss */
 .third--secondary .service__color { background-color: #27ae60; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
-/* line 89, ../sass/structure/_main.scss */
+/* line 94, ../sass/structure/_main.scss */
 .third--tertiary .service__title { background: #3498db; }
-/* line 100, ../sass/structure/_main.scss */
+/* line 105, ../sass/structure/_main.scss */
 .third--tertiary .service__color { background-color: #2980b9; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
 /* ========================================================================== FOOTER ========================================================================== */

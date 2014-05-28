@@ -21,6 +21,11 @@ input::-moz-focus-inner, select::-moz-focus-inner {
 .hero__sub {
 	color: $gray;
 }
+@media screen and (max-width: $breakpoint-1-max-width) {
+	.hero__title {
+		font-size: 35px;
+	}
+}
 
 .service {
 	position: relative;

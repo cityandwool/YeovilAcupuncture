@@ -8,12 +8,15 @@ body {
 %bold {
 	font-weight: 700;	
 }
+%fa {
+	font-family: 'Font Awesome';
+}
 .hero {
 	text-align: center;
 }
 .hero__title {
 	font-size: 40px;
-	@extend %bold;
+	//@extend %bold;
 	text-transform: uppercase;
 	margin-bottom: $gutter/2;
 }
