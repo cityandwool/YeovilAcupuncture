@@ -4,6 +4,12 @@
 
 $h: 120px;
 
+@media screen and (max-width: $breakpoint-1-max-width) {
+	.nav {
+		display: none;
+	}
+}
+
 .nav {
 	float: right;
 }
@@ -22,7 +28,7 @@ $h: 120px;
 	position: relative;
 	color: $gray;
 	&:hover {
-		color: $secondary;
+		color: $primary;
 		&:after {
 			content: '';
 			height: 4px;
@@ -32,6 +38,31 @@ $h: 120px;
 			background: $primary;
 			left: 0px; 
 			right: 0px;
+		}
+	}
+}
+
+.nav__item--primary a {
+	&:hover {
+		color: $primary;
+		&:after {
+			background: $primary;
+		}
+	}
+}
+.nav__item--secondary a {
+	&:hover {
+		color: $secondary;
+		&:after {
+			background: $secondary;
+		}
+	}
+}
+.nav__item--tertiary a {
+	&:hover {
+		color: $tertiary;
+		&:after {
+			background: $tertiary;
 		}
 	}
 }

@@ -3,6 +3,10 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch'),
     path = require('path');
 
+function handleError() {
+    console.log('Error');
+}
+
 gulp.task('compass', function() {
     gulp.src('./assets/sass/*.scss')
         .pipe(compass({
@@ -12,11 +16,12 @@ gulp.task('compass', function() {
             style: 'compact',
             comments: 'false'
         }))
+        .on('error',handleError)
         .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('assets/sass/*/*.scss', ['compass']);
+    gulp.watch('assets/sass/**/*.scss', ['compass']);
 });
 
 // Default Task

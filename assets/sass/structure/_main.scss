@@ -23,25 +23,27 @@ input::-moz-focus-inner, select::-moz-focus-inner {
 
 .service {
 	position: relative;
-	height: 352px;
+	height: 300px;
 }
 .service__title {
 	position: absolute;
 	z-index: 10;
 	top: 0px;
 	left: 0px;
-	padding: $gutter/2;
-	background: $primary;
+	padding: $gutter*.75;
 	h2 {
-		font-size: 20px;
+		font-size: 22px;
 		color: $white;
 	}
 }
 .service__sub {
 	position: absolute;
 	z-index: 10;
-	bottom: 0px;
-	left: 0px;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	color: $white;
+	line-height: 24px;
 }
 .service__wrap {
 	position: relative;
@@ -57,18 +59,62 @@ input::-moz-focus-inner, select::-moz-focus-inner {
 	right: 0px;
 	height: 100%;
 	width: 100%;
-	background: url('../img/green-trans.png') repeat;
 }
 .service__image {
 	position: absolute;
 	z-index: 4;
-	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
 }
 .service-content {
 	background: $gray-lighter;
 	padding: $gutter*1.5;
+	ul {
+		margin-bottom: $gutter;
+		@extend %clearfix;
+		font-size: 12px;
+		li {
+			color: $gray;
+			line-height: 24px;
+			float: left;
+			display: inline-block;
+			margin-right: $gutter/2;	
+		}
+	}
 }
 
-.service, .service-content, .nav {
-	display: none;
+@mixin service($color) {
+	.third--#{$color} {
+		.service__title {
+			@if ($color == 'primary') {
+				background: $primary;
+			}
+			@else if ($color == 'secondary') {
+				background: $secondary;
+			}
+			@else if ($color == 'tertiary') {
+				background: $tertiary;
+			}
+		}
+		.service__color {
+			@if ($color == 'primary') {
+				background-color: $primary-dark;
+			}
+			@else if ($color == 'secondary') {
+				background-color: $secondary-dark;
+			}
+			@else if ($color == 'tertiary') {
+				background-color: $tertiary-dark;
+			}
+			@include opacity(0.7);
+
+			//background: url('../img/#{$color}-trans.png') repeat;
+		}
+	}
+}
+
+$services: primary, secondary, tertiary;
+
+@each $service in $services {
+	@include service($service);
 }

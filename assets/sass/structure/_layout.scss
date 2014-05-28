@@ -12,12 +12,12 @@
 	padding: 0px $gutter;
 }
 
-
-.service {
-	@include column(4);
-	padding: 0px;
+.row {
+	margin: 0px;
 }
-.service-content {
-	@include column(8);
+
+.third {
+	@include column(4);
+	@include column(12,12,$breakpoint-1-max-width);
 	padding: 0px;
 }

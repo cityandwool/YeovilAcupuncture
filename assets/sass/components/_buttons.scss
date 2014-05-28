@@ -8,7 +8,6 @@
 	border-width: 1px;
 	border-style: solid;
 	border-color: $primary;
-	margin: 0px $gutter/4;
 	text-decoration: none;
 	color: $primary;
 	&:hover {
@@ -20,4 +19,110 @@
 
 .hero__link {
 	@extend %btn;
+	margin: 0px $gutter/4;
+}
+
+.btn {
+	@extend %btn;
+	margin-right: $gutter/4;
+	margin-bottom: $gutter/2;
+}
+
+.third--primary {
+	.btn {
+		color: $primary;
+		border-color: $primary;
+		&:hover {
+			color: $white;
+			border-color: $primary;
+			background: $primary;
+		}
+	}
+}
+.third--secondary {
+	.btn {
+		color: $secondary;
+		border-color: $secondary;
+		&:hover {
+			color: $white;
+			border-color: $secondary;
+			background: $secondary;
+		}
+	}
+}
+.third--tertiary {
+	.btn {
+		color: $tertiary;
+		border-color: $tertiary;
+		&:hover {
+			color: $white;
+			border-color: $tertiary;
+			background: $tertiary;
+		}
+	}
+}
+
+.links {
+	margin: 0px 0px $gutter 0px;
+	padding: $gutter;
+	@extend %clearfix;
+}
+.links__item {
+	display: inline-block;
+	$s: 80px;
+	height: $s;
+	width: $s;
+	line-height: $s;
+	text-align: center;
+	background: $gray;
+	float: left;
+	position: relative;
+	&:after {
+		position: absolute;
+		pointer-events: none;
+		top: 0px;
+		left: 0px;
+		display: block;
+		height: $s;
+		width: $s;
+		line-height: $s;
+		text-align: center;
+		@extend %fa;
+		content: '';
+		color: $white;
+		font-size: 40px;
+	}
+	&.links__item--facebook {
+		&:after {
+			content: '\f09a';
+		}
+		background: $facebook;
+		&:hover {
+			background: darken($facebook,5%);
+		}
+	}
+	&.links__item--twitter {
+		&:after {
+			content: '\f099';
+		}
+		background: $twitter;
+		&:hover {
+			background: darken($twitter,5%);
+		}
+	}
+	&.links__item--bac {
+		&:after {
+			content: '\f19c';
+		}
+		background: $tertiary;
+		&:hover {
+			background: darken($tertiary,5%);
+		}
+	}
+}
+.links__link {
+	color: $white;
+	text-decoration: none;
+	display: block;
+	text-indent: -9999px;
 }
