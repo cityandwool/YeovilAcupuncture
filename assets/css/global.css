@@ -145,6 +145,8 @@ body { font-family: 'Montserrat'; }
 /* line 24, ../sass/structure/_header.scss */
 .header__title { display: block; height: 50px; width: 69px; background: url("../img/naomi-ryland-yeovil-acpuncturist-logo.png"); -webkit-background-size: 69px; -moz-background-size: 69px; -o-background-size: 69px; background-size: 69px; text-indent: -9999px; margin: 34px 0px 30px 0px; float: left; }
 
+@media screen and (max-width: 48em) { /* line 37, ../sass/structure/_header.scss */
+  .header__title { margin: 34px auto 30px auto; float: none; } }
 /* ========================================================================== NAVIGATION ========================================================================== */
 @media screen and (max-width: 48em) { /* line 8, ../sass/structure/_nav.scss */
   .nav { display: none; } }
@@ -190,51 +192,51 @@ a { outline: 0; }
 input::-moz-focus-inner, select::-moz-focus-inner { border: 0; }
 
 /* line 17, ../sass/structure/_main.scss */
-.hero { margin: 80px 0px; }
+.hero { margin: 80px 0px; padding: 0px 20px; }
 
-/* line 20, ../sass/structure/_main.scss */
+/* line 21, ../sass/structure/_main.scss */
 .hero__sub { color: #999999; }
 
-/* line 24, ../sass/structure/_main.scss */
+/* line 25, ../sass/structure/_main.scss */
 .service { position: relative; height: 300px; }
 
-/* line 28, ../sass/structure/_main.scss */
+/* line 29, ../sass/structure/_main.scss */
 .service__title { position: absolute; z-index: 10; top: 0px; left: 0px; padding: 15px; }
-/* line 34, ../sass/structure/_main.scss */
+/* line 35, ../sass/structure/_main.scss */
 .service__title h2 { font-size: 22px; color: white; }
 
-/* line 39, ../sass/structure/_main.scss */
+/* line 40, ../sass/structure/_main.scss */
 .service__sub { position: absolute; z-index: 10; bottom: 20px; left: 20px; right: 20px; color: white; line-height: 24px; }
 
-/* line 48, ../sass/structure/_main.scss */
+/* line 49, ../sass/structure/_main.scss */
 .service__wrap { position: relative; overflow: hidden; height: 100%; }
 
-/* line 53, ../sass/structure/_main.scss */
+/* line 54, ../sass/structure/_main.scss */
 .service__color { position: absolute; z-index: 5; top: 0px; bottom: 0px; left: 0px; right: 0px; height: 100%; width: 100%; }
 
-/* line 63, ../sass/structure/_main.scss */
+/* line 64, ../sass/structure/_main.scss */
 .service__image { position: absolute; z-index: 4; min-width: 100%; min-height: 100%; }
 
-/* line 69, ../sass/structure/_main.scss */
+/* line 70, ../sass/structure/_main.scss */
 .service-content { background: #fafafa; padding: 30px; }
-/* line 72, ../sass/structure/_main.scss */
+/* line 73, ../sass/structure/_main.scss */
 .service-content ul { margin-bottom: 20px; font-size: 12px; }
-/* line 76, ../sass/structure/_main.scss */
+/* line 77, ../sass/structure/_main.scss */
 .service-content ul li { color: #999999; line-height: 24px; float: left; display: inline-block; margin-right: 10px; }
 
-/* line 88, ../sass/structure/_main.scss */
+/* line 89, ../sass/structure/_main.scss */
 .third--primary .service__title { background: #1dd2af; }
-/* line 99, ../sass/structure/_main.scss */
+/* line 100, ../sass/structure/_main.scss */
 .third--primary .service__color { background-color: #16a085; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
-/* line 88, ../sass/structure/_main.scss */
+/* line 89, ../sass/structure/_main.scss */
 .third--secondary .service__title { background: #2ecc71; }
-/* line 99, ../sass/structure/_main.scss */
+/* line 100, ../sass/structure/_main.scss */
 .third--secondary .service__color { background-color: #27ae60; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
-/* line 88, ../sass/structure/_main.scss */
+/* line 89, ../sass/structure/_main.scss */
 .third--tertiary .service__title { background: #3498db; }
-/* line 99, ../sass/structure/_main.scss */
+/* line 100, ../sass/structure/_main.scss */
 .third--tertiary .service__color { background-color: #2980b9; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
 /* ========================================================================== FOOTER ========================================================================== */

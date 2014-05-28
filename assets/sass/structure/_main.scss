@@ -16,6 +16,7 @@ input::-moz-focus-inner, select::-moz-focus-inner {
 
 .hero {
 	margin: $gutter*4 0px;
+	padding: 0px $gutter;
 }
 .hero__sub {
 	color: $gray;
