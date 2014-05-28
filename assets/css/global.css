@@ -45,7 +45,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body { font-family: 'Montserrat'; }
 
 /* line 11, ../sass/base/_type.scss */
-.links__item:after { font-family: 'Font Awesome'; }
+.links__item:after { font-family: FontAwesome; }
 
 /* line 14, ../sass/base/_type.scss */
 .hero { text-align: center; }
