@@ -34,6 +34,9 @@
 	float: left;
 }
 @media screen and (max-width: $breakpoint-1-max-width) {
+	.header__wrap {
+		height: 114px;
+	}
 	.header__title {
 		margin: 34px auto 30px auto;
 		float: none;
