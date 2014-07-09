@@ -63,7 +63,7 @@ body { font-family: 'Montserrat'; }
 
 /* ========================================================================== BUTTONS ========================================================================== */
 /* line 5, ../sass/components/_buttons.scss */
-.hero__link, .btn { display: inline-block; padding: 10px 20px; border-width: 1px; border-style: solid; border-color: #1dd2af; text-decoration: none; color: #1dd2af; }
+.hero__link, .btn { display: inline-block; padding: 10px 20px; margin-bottom: 10px; border-width: 1px; border-style: solid; border-color: #1dd2af; text-decoration: none; color: #1dd2af; }
 /* line 13, ../sass/components/_buttons.scss */
 .hero__link:hover, .btn:hover { border-color: #1dd2af; background: #1dd2af; color: white; }
 
