@@ -13,7 +13,7 @@ gulp.task('compass', function() {
             project: path.join(__dirname, 'assets'),
             css: 'css',
             sass: 'sass',
-            style: 'compact',
+            style: 'compress',
             comments: 'false'
         }))
         .on('error',handleError)
