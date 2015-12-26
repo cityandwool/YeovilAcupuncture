@@ -14,5 +14,10 @@ $(document).ready(function() {
 	    }
 	  });
 	});
+	
+	$('.grid-wrap').isotope({
+		// options
+		itemSelector: '.grid'
+	});
 
 });

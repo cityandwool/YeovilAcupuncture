@@ -74,7 +74,8 @@ input::-moz-focus-inner, select::-moz-focus-inner {
 }
 .service-content {
 	background: $gray-lighter;
-	padding: $gutter*1.5;
+	@extend %clearfix;
+	padding: $gutter*1.5 $gutter*1.5 0px $gutter*1.5;
 	ul {
 		margin-bottom: $gutter;
 		@extend %clearfix;
@@ -86,6 +87,20 @@ input::-moz-focus-inner, select::-moz-focus-inner {
 			display: inline-block;
 			margin-right: $gutter/2;	
 		}
+	}
+}
+
+.service-content--testimonial {
+	background: $white;
+	.content {
+		@extend %clearfix;
+		background: lighten($primary,50%);
+		p {
+			color: $primary !important;
+		}
+		padding: $gutter*1.5 $gutter*1.5 $gutter $gutter*1.5;
+		border: 2px solid $primary;
+		
 	}
 }
 
